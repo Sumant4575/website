@@ -23,6 +23,6 @@ jobs:
 
       - name: Sync website to S3
         run: |
-          aws s3 sync ./ s3://website-new-one/ --delete --acl public-read --exclude ".git/*" --exclude ".github/*"
+          aws s3 sync ./ s3://website-new-one/ --delete 
 
       
